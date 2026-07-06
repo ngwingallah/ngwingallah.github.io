@@ -1,1 +1,0 @@
-# ngwingallah.github.io
