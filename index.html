@@ -424,19 +424,17 @@ img.ph{width:100%;height:100%;object-fit:cover;object-position:center 22%;displa
 <script>
 /* ===== EDIT PROJECTS HERE — status: planned | building | published ===== */
 const PROJECTS = [
-  {id:"P01",tier:1,title:"AI system readiness assessment",blurb:"NIST AI RMF + EU AI Act gap assessment for an AI product.",tags:["NIST AI RMF","EU AI Act","GRC"],status:"building",repo:"",writeup:""},
-  {id:"P02",tier:1,title:"Deepfake & voice-clone defense playbook",blurb:"Verification workflow and awareness module against AI-driven vishing.",tags:["Social engineering","Awareness"],status:"planned",repo:"",writeup:""},
-  {id:"P03",tier:1,title:"LLM prompt-injection detection layer",blurb:"A filter that catches injection and jailbreak inputs before the model.",tags:["AI security","Prompt injection"],status:"planned",repo:"",writeup:""},
-  {id:"P04",tier:1,title:"Software supply-chain security (SBOM)",blurb:"SBOM generation, dependency scanning, and a CI policy gate.",tags:["DevSecOps","SBOM","CI/CD"],status:"planned",repo:"",writeup:""},
-  {id:"P05",tier:2,title:"AI red-team report",blurb:"Adversarial testing of an open model, mapped to the OWASP LLM Top 10.",tags:["OWASP LLM","Red team"],status:"planned",repo:"",writeup:""},
-  {id:"P06",tier:2,title:"RAG poisoning & indirect injection lab",blurb:"Poison a RAG knowledge base, then build and prove a defense.",tags:["RAG security"],status:"planned",repo:"",writeup:""},
-  {id:"P07",tier:2,title:"Detection-as-code pipeline",blurb:"Sigma rules in Git, CI-tested, deployed to a SIEM, mapped to ATT&CK.",tags:["Detection eng","Sigma","ATT&CK"],status:"planned",repo:"",writeup:""},
-  {id:"P08",tier:2,title:"Secure-by-default Terraform",blurb:"Reusable secure IaC modules enforced with policy-as-code in CI.",tags:["Cloud","IaC","OPA"],status:"planned",repo:"",writeup:""},
-  {id:"P09",tier:2,title:"SOAR automated triage playbook",blurb:"An alert enrichment-and-response workflow that scales incident handling.",tags:["SOAR","Incident response"],status:"planned",repo:"",writeup:""},
-  {id:"P10",tier:3,title:"Agentic AI / MCP red team",blurb:"Attack an agent's decision loop across the OWASP Agentic Top 10, then harden it.",tags:["OWASP ASI","MITRE ATLAS"],status:"planned",repo:"",writeup:"",flagship:true},
-  {id:"P11",tier:3,title:"Cloud attack-path mapping",blurb:"Visualize the route from entry point to crown-jewel data, then close it.",tags:["Cloud","Attack paths","IAM"],status:"planned",repo:"",writeup:""},
-  {id:"P12",tier:3,title:"Post-quantum crypto migration lab",blurb:"A hybrid post-quantum TLS service and a practical migration playbook.",tags:["PQC","TLS"],status:"planned",repo:"",writeup:""},
-  {id:"P13",tier:3,title:"Threat-intel honeypot research",blurb:"Capture real attacks in the wild and publish original IOCs.",tags:["Threat intel","Honeypots"],status:"planned",repo:"",writeup:""},
+  {id:"P01",tier:1,title:"LLM prompt-injection detection layer",blurb:"A filter that catches injection and jailbreak inputs before the model.",tags:["AI security","Prompt injection"],status:"building",repo:"",writeup:""},
+  {id:"P02",tier:1,title:"Software supply-chain security (SBOM)",blurb:"SBOM generation, dependency scanning, and a CI policy gate.",tags:["DevSecOps","SBOM","CI/CD"],status:"planned",repo:"",writeup:""},
+  {id:"P03",tier:2,title:"AI red-team report",blurb:"Adversarial testing of an open model, mapped to the OWASP LLM Top 10.",tags:["OWASP LLM","Red team"],status:"planned",repo:"",writeup:""},
+  {id:"P04",tier:2,title:"RAG poisoning & indirect injection lab",blurb:"Poison a RAG knowledge base, then build and prove a defense.",tags:["RAG security"],status:"planned",repo:"",writeup:""},
+  {id:"P05",tier:2,title:"Detection-as-code pipeline",blurb:"Sigma rules in Git, CI-tested, deployed to a SIEM, mapped to ATT&CK.",tags:["Detection eng","Sigma","ATT&CK"],status:"planned",repo:"",writeup:""},
+  {id:"P06",tier:2,title:"Secure-by-default Terraform",blurb:"Reusable secure IaC modules enforced with policy-as-code in CI.",tags:["Cloud","IaC","OPA"],status:"planned",repo:"",writeup:""},
+  {id:"P07",tier:2,title:"SOAR automated triage playbook",blurb:"An alert enrichment-and-response workflow that scales incident handling.",tags:["SOAR","Incident response"],status:"planned",repo:"",writeup:""},
+  {id:"P08",tier:3,title:"Agentic AI / MCP red team",blurb:"Attack an agent's decision loop across the OWASP Agentic Top 10, then harden it.",tags:["OWASP ASI","MITRE ATLAS"],status:"planned",repo:"",writeup:"",flagship:true},
+  {id:"P09",tier:3,title:"Cloud attack-path mapping",blurb:"Visualize the route from entry point to crown-jewel data, then close it.",tags:["Cloud","Attack paths","IAM"],status:"planned",repo:"",writeup:""},
+  {id:"P10",tier:3,title:"Post-quantum crypto migration lab",blurb:"A hybrid post-quantum TLS service and a practical migration playbook.",tags:["PQC","TLS"],status:"planned",repo:"",writeup:""},
+  {id:"P11",tier:3,title:"Threat-intel honeypot research",blurb:"Capture real attacks in the wild and publish original IOCs.",tags:["Threat intel","Honeypots"],status:"planned",repo:"",writeup:""},
 ];
 const STATUS={planned:"Planned",building:"Building",published:"Published"};
 const linkIcon='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>';
